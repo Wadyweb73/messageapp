@@ -1,0 +1,13 @@
+.right-section {
+    width: 100%;
+    border-left: 1px solid #fff;
+}
+
+.page-header {
+    background: #123456;
+    width: 100%;
+    padding: 0.5em 1em;
+    color: #fff;
+}
+
+

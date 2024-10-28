@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: transparent;
+}
+
+body, html {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container  {
+    display: flex;
+    height: 100%;
+    background: #cdcdcd;
+}
+
+.top-main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #f4f4f4;
+}
+
+.search-contact-input {
+    width: 300px;
+    padding: 0.5em 1em;
+    border: 1px solid #123456;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
+.search-action-button, .add-new-contact-button {
+    border: 1px solid #123456;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    background-color: #123456;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+/* TABLE STYLES */ 
+.table-container {
+    margin: 0.5em 0.5em;
+    border-radius: 1em;
+}
+.user-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 1em;
+    margin-bottom: 1px;
+}
+
+.left-side-info {
+    display: flex;
+    column-gap: 0.7em;
+}
+.username-container, .email-container {
+    font-weight: 600;
+}
+.email-container {
+    color: #123456;
+    font-size: 10pt;
+}
+.left-side-info > i {
+    background: #DD5745;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.middle-info {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8em;
+}
+
+.email-icon {
+    font-size:9pt;
+    color: #123456;
+}
+
+.right-side-info {
+    display: flex;
+    column-gap: 0.8em;
+}
+
+.view-profile-button, .user-info-button {
+    font-size: 15pt;
+    color: #123456;
+}
+
+.modal-add-contact {
+    width: 60%;
+    height: 40%;
+    background: #123456;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    box-shadow: 0 0 4px 3px rgb(0, 0, 0, 0.5);
+    color: #123456;
+    display: none;
+}
+
+.modal-contact-input {
+    width: 300px;
+    border: none;
+    border-radius: 0.5em;
+    background: #f4f4f4;
+    padding: 0.5em 1em;
+}
+
+.modal-find-contact-button {
+    padding: 0.5em;
+    border: none;
+    color: #fff;
+    background: #dd5745;
+    border-radius: 0.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-find-contact-button > i {
+    font-size: 12px;
+}
+
+.modal-bottom-content {
+    margin-top: 1em;
+    border-radius: 0.5em;
+    overflow: scroll;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    width: 100%;
+    height: auto;
+}
+
+.modal-left-side-info, .modal-middle-info, .modal-right-side-info {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.modal-user-icon {
+    font-size: 15px;
+    border-radius: 50%;;
+    padding: 0.5em;
+    background-color: #dd5745; 
+    color: #fff;
+}
+
+.modal-phonenumber-icon, .modal-view-profile-icon, 
+.modal-add-user-icon, .modal-profile-chat-icon {
+    color: #dd5745;
+}
+
+.show-modal {
+    display: block;
+}
+
+.js-modal-add-user-button, .js-user-info-button, 
+.js-view-profile-chat-button, .js-modal-profile-chat-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
