@@ -1,0 +1,7 @@
+sessions/
+vendor/
+examples/
+uploads/
+.env
+notes
+old-htaccess
